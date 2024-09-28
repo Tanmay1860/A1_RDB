@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\SequentialAccessFile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|solutionrelative:Inventory_Management_System_A1\\SequentialAccessFile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\DelimitedFileCSV.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|solutionrelative:Inventory_Management_System_A1\\DelimitedFileCSV.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|solutionrelative:Inventory_Management_System_A1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\Driver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|solutionrelative:Inventory_Management_System_A1\\Driver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\DelimitedFileCSV.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|solutionrelative:Inventory_Management_System_A1\\DelimitedFileCSV.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3F39354-F50E-411B-95B2-C4BE99BD5422}|Inventory_Management_System_A1\\Inventory_Management_System_A1.vcxproj|C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\RandomAccessFiles.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,31 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Driver.h",
               "DocumentMoniker": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\Driver.h",
               "RelativeDocumentMoniker": "Inventory_Management_System_A1\\Driver.h",
               "ToolTip": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\Driver.h",
               "RelativeToolTip": "Inventory_Management_System_A1\\Driver.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-28T18:23:44.379Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\main.cpp",
               "RelativeDocumentMoniker": "Inventory_Management_System_A1\\main.cpp",
-              "ToolTip": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\main.cpp*",
-              "RelativeToolTip": "Inventory_Management_System_A1\\main.cpp*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\main.cpp",
+              "RelativeToolTip": "Inventory_Management_System_A1\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-28T18:23:39.177Z",
               "IsPinned": true,
@@ -58,13 +61,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DelimitedFileCSV.cpp",
               "DocumentMoniker": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\DelimitedFileCSV.cpp",
               "RelativeDocumentMoniker": "Inventory_Management_System_A1\\DelimitedFileCSV.cpp",
               "ToolTip": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\DelimitedFileCSV.cpp",
               "RelativeToolTip": "Inventory_Management_System_A1\\DelimitedFileCSV.cpp",
-              "ViewState": "AgIAAIwBAAAAAAAAAAAAAM4BAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-28T18:23:37.75Z",
               "IsPinned": true,
@@ -72,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RandomAccessFiles.cpp",
               "DocumentMoniker": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\RandomAccessFiles.cpp",
               "RelativeDocumentMoniker": "Inventory_Management_System_A1\\RandomAccessFiles.cpp",
@@ -81,7 +84,19 @@
               "ViewState": "AgIAABQBAAAAAAAAAAAAACsBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-28T18:23:40.264Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SequentialAccessFile.cpp",
+              "DocumentMoniker": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\SequentialAccessFile.cpp",
+              "RelativeDocumentMoniker": "Inventory_Management_System_A1\\SequentialAccessFile.cpp",
+              "ToolTip": "C:\\GitHub\\SecondYear\\Fall 2024\\Relational Databases\\Assignment_One\\A1_RDB\\Inventory_Management_System_A1\\SequentialAccessFile.cpp",
+              "RelativeToolTip": "Inventory_Management_System_A1\\SequentialAccessFile.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-28T23:04:44.268Z",
               "EditorCaption": ""
             },
             {

@@ -1,5 +1,4 @@
 #include "Driver.h"
-
 /*
 * FUNCTION : menuRandomAccess
 * DESCRIPTION :
@@ -7,7 +6,6 @@
 * for different operations like adding, viewing, updating, and deleting products.
 * It runs in a loop until the user decides to exit.
 */
-
 void menuRandomAccess()
 {
     int choice, productId;
@@ -89,6 +87,7 @@ void menuRandomAccess()
     }
 }
 
+
 /*
 * FUNCTION : addProduct
 * DESCRIPTION :
@@ -98,7 +97,6 @@ void menuRandomAccess()
 * int productId : The ID of the product to be added.
 * ProductRandomAccess product : The product structure containing product details.
 */
-
 void addProductRA(int productId, Product product) {
     FILE* file = fopen(FILENAMERA, "rb+");
     // change postion for product Id check if the product Id is 0 and check if there is another one with the same product id.
@@ -143,6 +141,7 @@ void addProductRA(int productId, Product product) {
     printf("Product added successfully.\n");
 }
 
+
 /*
 * FUNCTION : searchProductByPosition
 * DESCRIPTION :
@@ -153,7 +152,6 @@ void addProductRA(int productId, Product product) {
 * ProductRandomAccess : The product structure containing the found product details,
 * or a product with ID -1 if not found.
 */
-
 Product searchProductByPositionRA(int productId)
 {
     FILE* file = fopen(FILENAMERA, "rb");
@@ -182,12 +180,12 @@ Product searchProductByPositionRA(int productId)
     return notFound;
 }
 
+
 /*
 * FUNCTION : loadProducts
 * DESCRIPTION :
 * This function loads all products from the binary file and displays them.
 */
-
 void loadProductsRA() {
     FILE* file = fopen(FILENAMERA, "rb");
     if (file == NULL) {
@@ -210,6 +208,7 @@ void loadProductsRA() {
     }
 
 }
+
 
 /*
 * FUNCTION : updateProduct
@@ -248,6 +247,7 @@ void updateProductRA(int productId, Product product) {
     }
 }
 
+
 /*
 * FUNCTION : deleteProduct
 * DESCRIPTION :
@@ -255,7 +255,6 @@ void updateProductRA(int productId, Product product) {
 * PARAMETERS :
 * int productId : The ID of the product to be deleted.
 */
-
 void deleteProductRA(int productId) {
     FILE* file = fopen(FILENAMERA, "rb+");
     if (file == NULL) {
@@ -284,6 +283,8 @@ void deleteProductRA(int productId) {
 
     printf("Product at productId %d has been deleted.\n", productId);
 }
+
+
 /*
 * FUNCTION : calculateHash
 * DESCRIPTION :
@@ -293,7 +294,6 @@ void deleteProductRA(int productId) {
 * RETURNS :
 * int : The calculated position in the file for the product.
 */
-
 int calculateHashRA(int productId) {
     int  position = productId * sizeof(Product);
     return position;

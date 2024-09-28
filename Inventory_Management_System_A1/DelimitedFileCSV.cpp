@@ -1,18 +1,16 @@
 #include "Driver.h"
-
 /*
 * FUNCTION : MenuDelimitedFile
 * DESCRIPTION :
-* This function implements a menu-driven interface for an Inventory Management System.
-* It allows users to perform CRUD operations on product :
+* This function implements a menu-driven interface for Inventory Management System.
+* It allows the user to perform CRUD operations on products such us:
 * 1. Adding a new product with attributes such as Product ID, Name, Category, Quantity, and Price.
 * 2. Reading and displaying existing products.
 * 3. Updating an existing product based on its Product ID.
 * 4. Deleting a product by its Product ID.
-* 5. Exiting the program.
-*
-* The function uses a loop to display the menu until the user chooses to exit.
-* It validates user inputs for Product ID, Name, Category, Quantity, and Price to ensure they meet the necessary criteria before performing any operations.
+* 
+* The program uses a loop to display the menu until the user chooses to exit.
+* It validates user inputs for Product ID, Name, Category, Quantity, and Price.
 * Invalid inputs trigger error messages, prompting the user to provide correct data.
 */
 void MenuDelimitedFile()
@@ -27,7 +25,7 @@ void MenuDelimitedFile()
     int productId;
     int isNumber = 1;
  
-
+   
     while (1) {
 
         printf("\nInventory Management System\n");
@@ -179,7 +177,7 @@ void MenuDelimitedFile()
             break;
 
         default:
-            printf("\n***Invalid option! Please try again.***\n");
+            printf("\n\n-> Invalid option! Please try again.\n");
         }
     }
 }
@@ -188,20 +186,19 @@ void MenuDelimitedFile()
 /*
 * FUNCTION : checkIfProductExists
 * DESCRIPTION :
-* This function checks whether a product with a specified Product ID exists in the inventory.
+* This function checks whether a Product ID exists in the inventory.
 *
 * Parameters:
-* - int productId: The Product ID to be checked for existence.
+* - int productId: The Product ID to be checked for duplicity.
 *
 * Returns:
 * - 1 if the product with the specified Product ID exists.
-* - 0 if the product does not exist.
+* - 0 if the product doesn't exist.
 *
 * The function begins by loading all existing products from a file into an array.
 * It then iterates through the array of products, comparing each product's ID to the provided Product ID.
 * If a match is found, it returns 1; if the loop completes without finding a match, it returns 0.
 */
-
 int checkIfProductExists(int productId) 
 {
     Product products[MAX_RECORDS];
@@ -237,7 +234,6 @@ int checkIfProductExists(int productId)
 * If the file closure fails, an error message is printed.
 * Finally, a success message is displayed to indicate that the product was added successfully.
 */
-
 void addProduct(Product product) 
 {
     // Check if the product ID already exists
@@ -271,12 +267,10 @@ void addProduct(Product product)
 * If no products are found (i.e., `loadProducts()` returns a count of 0), an informative message is printed, and the function exits.
 *
 * If products are found, the function prints a formatted table header displaying column names: Product ID, Name, Category, Quantity, and Price.
-* It then iterates over the array of products, printing each product's details in a structured format.
+* It then iterates over the array of products, printing each product's details in a format.
 * Each product is displayed in a table-like format with clear delineation for readability.
 *
-* Finally, the function concludes by printing a bottom border to complete the table display.
 */
-
 void readProducts() 
 {
     Product products[MAX_RECORDS];
@@ -311,13 +305,12 @@ void readProducts()
 * The function attempts to open the designated file in read mode. If the file cannot be opened, an error message is printed, and the function returns 0.
 *
 * If the file is opened successfully, the function reads each line of the file, parsing product details separated by commas.
-* Each product's attributes—Product ID, Name, Category, Quantity, and Price—are extracted using `strtok()` for tokenization, converting necessary strings to appropriate data types using `atoi()` and `atof()`.
+* Each product's attributes—Product ID, Name, Category, Quantity, and Price—are extracted using `strtok()` for tokenization, converting necessary strings to appropriate data types using `atoi()`and `atof()`.
 * The read operation continues until either the end of the file is reached or the maximum number of records is loaded.
 *
-* After reading the products, the function attempts to close the file and checks for successful closure, printing an error message if the closure fails.
+* After reading the products, the function close the file and checks for successful closure, printing an error message if the closure fails.
 * Finally, the function returns the count of products loaded into the array.
 */
-
 int loadProducts(Product products[]) 
 {
     FILE* file = fopen(FILENAME, "r");
@@ -365,7 +358,7 @@ int loadProducts(Product products[])
 * - int productId: The Product ID of the product to be updated.
 * - Product updatedProduct: A structure containing the new details of the product.
 *
-* The function begins by loading the current products from a file into an array using the `loadProducts()` function.
+* The function begins by loading the current products from the file into an array using the `loadProducts()` function.
 * It then iterates through the array to search for the product with the specified Product ID.
 * If a matching product is found, the product's details are updated with those from the `updatedProduct` structure, while retaining the original Product ID.
 * A flag `found` is set to indicate that the product was successfully located and updated.
@@ -373,7 +366,6 @@ int loadProducts(Product products[])
 * After completing the search, if the product was found and updated, the modified product list is saved back to the file using the `saveProducts()` function, and a success message is displayed.
 * If the product ID is not found in the inventory, an error message is printed to inform the user.
 */
-
 void updateProduct(int productId, Product updatedProduct) 
 {
     Product products[MAX_RECORDS];
@@ -405,20 +397,19 @@ void updateProduct(int productId, Product updatedProduct)
 /*
 * FUNCTION : deleteProduct
 * DESCRIPTION :
-* This function removes a product from the inventory based on the specified Product ID.
+* This function delete a product from the inventory based on the specified Product ID.
 *
 * Parameters:
 * - int productId: The Product ID of the product to be deleted.
 *
-* The function begins by loading the current products from a file into an array using the `loadProducts()` function.
+* The function begins by loading the current products from the file into an array using the `loadProducts()` function.
 * It then searches through the array for the product with the given Product ID.
 * If a match is found, the `found` flag is set, and the remaining products are shifted left in the array to fill the gap created by the deleted product.
 * The total count of products is then decremented to reflect the removal.
 *
 * After the deletion process, if the product was found and removed, the updated list of products is saved back to the file using the `saveProducts()` function, followed by a success message.
-* If the specified Product ID is not found in the inventory, an error message is printed to inform the user of the failure to locate the product.
+* If the specified Product ID is not found in the inventory, an error message is printed.
 */
-
 void deleteProduct(int productId) 
 {
     Product products[MAX_RECORDS];
@@ -466,9 +457,8 @@ void deleteProduct(int productId)
 * If the file is successfully opened, the function iterates over the provided array of products, writing each product's details in a comma-separated format.
 * Each product's attributes—Product ID, Name, Category, Quantity, and Price—are formatted for output using `fprintf()`.
 *
-* After writing all products, the function attempts to close the file and checks for successful closure, printing an error message if the closure fails.
+* After writing all products, the function close the file and checks for successful closure, printing an error message if the closure fails.
 */
-
 void saveProducts(Product products[], int count) 
 {
     FILE* file = fopen(FILENAME, "w");

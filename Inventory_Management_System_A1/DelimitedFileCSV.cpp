@@ -41,7 +41,7 @@ void MenuDelimitedFile()
 
         switch (choice) {
         case 1:
-            printf("Enter Product ID: ");
+            printf("Enter Product ID (numeric values only): ");
             fgets(buffer, sizeof(buffer), stdin); // Reading input as string
             sscanf(buffer, "%d", &product.productId); // Parsing integer from string
 
@@ -106,7 +106,7 @@ void MenuDelimitedFile()
             break;
 
         case 3:
-            printf("Enter Product ID to update: ");
+            printf("Enter Product ID to update (numeric values only): ");
             fgets(buffer, sizeof(buffer), stdin); // Reading input as string
             sscanf(buffer, "%d", &id); // Parsing integer from string
 

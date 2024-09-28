@@ -1,2 +1,6 @@
-﻿  SequentialAccessFile.cpp
+﻿  DelimitedFileCSV.cpp
+C:\GitHub\SecondYear\Fall 2024\Relational Databases\Assignment_One\A1_RDB\Inventory_Management_System_A1\DelimitedFileCSV.cpp(23,9): warning C4101: 'count': unreferenced local variable
+C:\GitHub\SecondYear\Fall 2024\Relational Databases\Assignment_One\A1_RDB\Inventory_Management_System_A1\DelimitedFileCSV.cpp(22,13): warning C4101: 'products': unreferenced local variable
+C:\GitHub\SecondYear\Fall 2024\Relational Databases\Assignment_One\A1_RDB\Inventory_Management_System_A1\DelimitedFileCSV.cpp(25,9): warning C4101: 'productId': unreferenced local variable
+C:\GitHub\SecondYear\Fall 2024\Relational Databases\Assignment_One\A1_RDB\Inventory_Management_System_A1\DelimitedFileCSV.cpp(339,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   Inventory_Management_System_A1.vcxproj -> C:\GitHub\SecondYear\Fall 2024\Relational Databases\Assignment_One\A1_RDB\x64\Debug\Inventory_Management_System_A1.exe

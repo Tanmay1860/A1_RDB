@@ -18,6 +18,7 @@
 #define MAX_RECORDS 100
 #define RECORD_SIZE 256
 #define FILENAME "products.csv"
+#define FILENAMERA "product.dat"
 
 
 typedef struct {
@@ -29,7 +30,7 @@ typedef struct {
 } Product;
 
 
-// Function Prototypes
+// Function Prototypes for Delimited File CSV
 void addProduct(Product product);
 void readProducts();
 void updateProduct(int productId, Product updatedProduct);
@@ -39,7 +40,14 @@ int loadProducts(Product products[]);
 void MenuDelimitedFile();
 int checkIfProductExists(int productId);
 
-
+// Function Prototypes for RandomAccessFiles
+void addProductRA(int productId, Product product);
+Product searchProductByPositionRA(int productId);
+void updateProductRA(int productId, Product product);
+void deleteProductRA(int productId);
+int calculateHashRA(int productId);
+void loadProductsRA();
+void menuRandomAccess();
 
 
 #endif

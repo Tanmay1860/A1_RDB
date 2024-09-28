@@ -21,7 +21,7 @@ int main(void) {
             MenuDelimitedFile();
             break;
         case 2:
-            //menuRandomAccess();
+            menuRandomAccess();
             break;
         case 3:
 

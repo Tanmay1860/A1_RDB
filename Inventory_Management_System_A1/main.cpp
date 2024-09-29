@@ -33,7 +33,7 @@ int main(void) {
             menuRandomAccess();
             break;
         case 3:
-
+            menuSequentialAccess ();
             break;
         case 4:
             printf("Exiting the program. Goodbye!\n");
